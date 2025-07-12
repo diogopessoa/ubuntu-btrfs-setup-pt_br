@@ -62,7 +62,6 @@ Este exemplo de instalação foi usado o Ubuntu 25.04.
 ## Como usar o script
 
 ⚠️ Após a instalação do Ubuntu com Btrfs, NÃO reinicie!
-Copie o script para a pasta Downloads do LiveCD/USB.
 
 ### Descubra quais são suas partições
 
@@ -77,15 +76,24 @@ sda
 └─sda3  btrfs  /
 ```
 
-### Agora que sabe qual o tipo das suas partições, torne o script executável:
+### Baixe o script para a pasta Downloads do LiveCD/USB.
 
 ```bash
-sudo su
-cd Downloads
+cd ~ Downloads/ubuntu-zram-setup
+wget https://raw.githubusercontent.com/diogopessoa/ubuntu-btrfs-setup/main/ubuntu-btrfs-setup-pt_br.sh
+```
+
+### Torne-o executável:
+
+```bash
 chmod +x ubuntu-btrfs-setup-pt_br.sh
 ```
 
-### Execute o script:
+### Execute o script como administrador:
+
+```bash
+sudo ./ubuntu-btrfs-setup-pt_br.sh
+```
 
 A ordem das partições no final do comando deve ser: `/`  `/boot`  `/boot/efi`
 
