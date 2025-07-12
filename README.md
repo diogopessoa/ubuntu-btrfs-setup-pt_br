@@ -59,9 +59,9 @@ Este exemplo de instalação foi usado o Ubuntu 25.04.
 6. **Continuar a instalação**
    - Instale o sistema normalmente, mas NÃO reinicie quando concluir.
 
-7. Como usar o script
+## Como usar o script
 
-⚠️ Após a instalação do Ubuntu com Btrfs, NÃO reinicie!  
+⚠️ Após a instalação do Ubuntu com Btrfs, NÃO reinicie!
 Copie o script para a pasta Downloads do LiveCD/USB.
 
 ### Descubra quais são suas partições
@@ -87,10 +87,10 @@ chmod +x ubuntu-btrfs-setup-pt_br.sh
 
 ### Execute o script:
 
-A ordem dos parâmetros no final do comando deve ser: `/`  `/boot`  `/boot/efi`
+A ordem das partições no final do comando deve ser: `/`  `/boot`  `/boot/efi`
 
 ```bash
-sudo ./ubuntu-btrfs-setup-pt_br.sh sda3 sda2 sda1 # o exemplo aqui foi sda3->`/` sda2->`/boot` sda1->`/boot/efi`
+sudo ./ubuntu-btrfs-setup-pt_br.sh sda3 sda2 sda1 # o exemplo aqui foi com 'sda': sda3->`/` sda2->`/boot` sda1->`/boot/efi`
 ```
 
 ### ✅ Concluído! Agora reinicie a máquina para usufruir do Ubuntu com Snapshots automáticos.
