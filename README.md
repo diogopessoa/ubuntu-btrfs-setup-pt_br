@@ -79,7 +79,7 @@ sda
 ### Baixe o script para a pasta Downloads do LiveCD/USB.
 
 ```bash
-cd ~ Downloads/ubuntu-zram-setup
+cd ~ Downloads/ubuntu_btrfs_setup-pt_br
 wget https://raw.githubusercontent.com/diogopessoa/ubuntu-btrfs-setup-pt_br/main/ubuntu_btrfs_setup-pt_br.sh
 ```
 
