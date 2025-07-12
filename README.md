@@ -80,7 +80,7 @@ sda
 
 ```bash
 cd ~ Downloads/ubuntu-zram-setup
-wget https://raw.githubusercontent.com/diogopessoa/ubuntu-btrfs-setup/main/ubuntu-btrfs-setup-pt_br.sh
+wget https://raw.githubusercontent.com/diogopessoa/ubuntu-btrfs-setup-pt_br/main/ubuntu_btrfs_setup-pt_br.sh
 ```
 
 ### Torne-o executável:
