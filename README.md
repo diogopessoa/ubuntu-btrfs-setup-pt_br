@@ -91,21 +91,28 @@ chmod +x ubuntu-btrfs-setup-pt_br.sh
 
 ### Execute o script como administrador:
 
-```bash
-sudo ./ubuntu-btrfs-setup-pt_br.sh
-```
+A ordem das partições no **final do comando** a seguir deve ser: `/`  `/boot`  `/boot/efi`
 
-A ordem das partições no final do comando deve ser: `/`  `/boot`  `/boot/efi`
+O exemplo abaixo está para partições **sda**: sda3->`/` sda2->`/boot` sda1->`/boot/efi`. Verifique e substitua ao seu tipo de partições com comando `lsblk -f`.
 
 ```bash
-sudo ./ubuntu-btrfs-setup-pt_br.sh sda3 sda2 sda1 # o exemplo aqui foi com 'sda': sda3->`/` sda2->`/boot` sda1->`/boot/efi`
+sudo ./ubuntu-btrfs-setup-pt_br.sh sda3 sda2 sda1
 ```
 
-### ✅ Concluído! Agora reinicie a máquina para usufruir do Ubuntu com Snapshots automáticos.
+### ✅ Concluído!
+Agora reinicie a máquina para usufruir do Ubuntu com Snapshots automáticos.
+
 💡 Dica: Para verificar os subvolumes Btrfs, abra o **Btrfs Assistant** e vá em "Subvolumes" ou execute o **comando** `sudo btrfs subvolume list /`
 
 
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](https://github.com/diogopessoa/ubuntu-btrfs-setup-pt_br/blob/main/LICENSE).
+
+## Créditos
+
+* [openSUSE Team](https://github.com/openSUSE/snapper) — Snapper
+* [Antynea](https://github.com/Antynea/grub-btrfs) — grub-btrfs
+* [Dan Cantrell](https://github.com/dcantrell/btrfs-assistant) — Btrfs Assistant
+* [Ubuntu](https://ubuntu.com/download) - OS
 
