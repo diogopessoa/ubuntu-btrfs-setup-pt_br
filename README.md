@@ -1,11 +1,11 @@
-# Instalaçã do Ubuntu em Btrfs + Snapshots
+# Instalação do Ubuntu + Btrfs + Snapshots
 Este Script cria os Subvolumes Btrfs (ainda no modo LiveCD/USB) e faz a configuração de Snapshots automáticos para Ubuntu 24.04 (ou superior) e sistemas derivados compatíveis. 
 
 
 ## O que o script faz
 
 - Cria os subvolumes no Btrfs;
-  - `@`, `@home`, `@log`, `@cache`, `@tmp`, `@libvirt`, `@Flatpak`
+  - `@`, `@home`, `@log`, `@cache`, `@tmp`, `@libvirt`, `@flatpak`
 - Snapshots automáticos habilitados;
 - Habilita entrada de snapshot no Grub;
 - Instala e configura:
@@ -20,7 +20,7 @@ Este Script cria os Subvolumes Btrfs (ainda no modo LiveCD/USB) e faz a configur
   - Sistema de arquivos raiz em **Btrfs**
   - Partição **/boot** separada em ext4 (1GB)
   - (Opcional) Partição EFI se for UEFI (1GB)
-- Execução do Script `ubuntu-btrfs-setu` no **Live CD/USB**, após a instalação do Ubuntu
+- Execução do Script `ubuntu-btrfs-setup` no **Live CD/USB**, após a instalação do Ubuntu
 
 ## Instale o Ubuntu com Btrfs
 Este exemplo de instalação foi usado o Ubuntu 25.04.
@@ -57,14 +57,9 @@ Este exemplo de instalação foi usado o Ubuntu 25.04.
    - `/` em Btrfs
 
 6. **Continuar a instalação**
-   - Instale o sistema normalmente, mas NÃO reinicie.
+   - Instale o sistema normalmente, mas NÃO reinicie quando concluir.
 
-7. **NÃO reinicie após a instalação**
-   - Feche o instalador após a instalação
-   - Abra o terminal e execute o Scritp
-
-
-## Como usar o script
+7. Como usar o script
 
 ⚠️ Após a instalação do Ubuntu com Btrfs, NÃO reinicie!  
 Copie o script para a pasta Downloads do LiveCD/USB.
@@ -92,7 +87,7 @@ chmod +x ubuntu-btrfs-setup-pt_br.sh
 
 ### Execute o script:
 
-A ordem dos parâmetros deve ser: `/`  `/boot`  `/boot/efi`
+A ordem dos parâmetros no final do comando deve ser: `/`  `/boot`  `/boot/efi`
 
 ```bash
 sudo ./ubuntu-btrfs-setup-pt_br.sh sda3 sda2 sda1 # o exemplo aqui foi sda3->`/` sda2->`/boot` sda1->`/boot/efi`
