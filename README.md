@@ -113,6 +113,6 @@ Este projeto está licenciado sob a [Licença MIT](https://github.com/diogopesso
 
 * [openSUSE Team](https://github.com/openSUSE/snapper) — Snapper
 * [Antynea](https://github.com/Antynea/grub-btrfs) — grub-btrfs
-* [Dan Cantrell](https://github.com/dcantrell/btrfs-assistant) — Btrfs Assistant
+* [Dan Cantrell](https://gitlab.com/btrfs-assistant/btrfs-assistant) — Btrfs Assistant
 * [Ubuntu](https://ubuntu.com/download) - OS
 
